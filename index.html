@@ -1,142 +1,511 @@
+<!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<title>
-			Mon Portfolio 
-		</title>
-	</head>
-	<body>
-		<nav>
-			<div class="profile">
-				<img src="profile.jpeg" alt="profile photo" />
-				<h1>Diakarou Sokhona</h1>
-			</div>
-			<ul>
-				<li><a href="#id_contact">Mes contacts</a></li>
-				<li><a href="https://www.linkedin.com/in/diakarou-sokhona-a72322185/" class="logo">linkedin</a></li>
-				<li><a href="#id_projets">Mes projets</a></li>
-				<li><a href="https://github.com/sokhonad" class="logo">github</a></li>
-				<li><a href="sokhona_cv.pdf" class="logo">CV</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CV Développeur web full-stack</title>
+        <meta name="description" content="En recherche active à Le havre - Poste de développeur full-stack">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
+        <link rel="stylesheet" href="assets/animate.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,300i,400,500,600,700,800,900|Roboto:100,300,400,500,700,900">
+        <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/mobile.css">
+    </head>
 
-			</ul>
-		</nav>
+    <body>
 
-		<section class="page-content">
-			<header>
-				<h2>Actuellement en master 2 ingénierie du Web, des Objets Communicants et des Systèmes Complexes (IWOCS).</h2>
-				<p style="text-align: justify;">
-					Actuellement en master à l’université du Havre,ce master forme des cadres de haut niveau, ingénieurs et chercheurs possédent une solide culture informatique.
-					Les compétences acquises, en particulier, concernent le Web, l’internet des objets, la sécurité, la programmation mobile et le Big Data. Les jeunes diplômés sont capables d’exercer leur profession dans des industries de haute technologie, mais aussi d’apporter leur expertise dans des PME et des TPE
-					. <br>
-					Maîtrise des technologies et modèles liés: au WEB,
-					aux objets communicants IoT,
-					aux systèmes mobiles,
-					à la sécurité,
-					au Big Data,
-					à la visualisation des données. 
-				</p>
-				<button>Dites Hey</button>
-			</header>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fal fa-home-alt"></i></a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#experience">Parcours</a></li>
+                <li><a href="#projects">Réalisations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-			<section class="presentation-image">
-				<img src="https://i.ibb.co/RbGysWw/main-image.jpg" alt="AI image" />
-			</section>
+        <div id="mobile-nav">
+            <div id="menu-buttons">
+                <div id="hamburger">
+                    <i class="far fa-bars"></i>
+                </div>
+    
+                <div id="cross" class="animated fadeIn">
+                    <i class="far fa-times"></i>
+                </div>
+            </div>
 
-			<section class="projects-section " id="id_projets">
-				<h1>Projets réalisés</h1>
-				<div class="projects">
-					<div class="project">
-						<h4>Tournoi de Roland Garros </h4>
-						<p class="description">
-							Conception de la Base de Données Tournoi de Roland Garros est est un tournoi de tennis sur terre battue créé en 1925 et qui se tient annuellement depuis 1928 à Paris, dans le stade Roland-Garros.
+            <div id="menu" class="animated fadeIn">
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#experience">Parcours</a></li>
+                    <li><a href="#projects">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
-						</p>
-						<p class="dates">Dates 2019 - 2020</p>
-					</div>
-					<div class="project">
-						<h4>Détection de l’approche d’un navire grâce aux signaux AIS</h4>
-						<p class="description">
-							Projet concernant une application web qui permet à un utilisateur
-							(une personne dans l’attente de sa marchandise) de s’inscrire, de se connecter, de créer des alertes
-							etc.
-						</p>
-						<p class="dates">Dates 2019 - 2020</p>
-					</div>
-					<div class="project">
-						<h4>Gestion des hôtels</h4>
-						<p class="description">
-							Site web pour les admistrateur de l'hôtel pour faire toutes les operation possibles de l'hôtel.
-						</p>
-						<p class="dates">Dates 2019 - 2020</p>
-					</div>
-					<div class="project">
-						<h4>Championnats du monde d'athlétisme </h4>
-						<p class="description">
-							site wep pour les Championnats du monde d'athlétisme sont une compétition biennale en plein air organisée par la WA qui désigne un champion du monde pour chaque discipline majeure de l'athlétisme
-						</p>
-						<p class="dates">Dates 2020 - 2021</p>
-					</div>
-					<div class="project">
-						<h4>Jeux de bulles-application Android</h4>
-						<p class="description">
-							Cette application permet aux utilisateurs de savoir sa capacité  de place un objet dans plusieurs androits de son smarphone
-							en une minute.
-						</p>
-						<p class="dates">Dates 2020 - 2021</p>
-					</div>
-					
-										<div class="project">
-						<h4>WEB APP</h4>
-						<p class="description">
-							Une web app qui se connecte à une source de données (un Web Service) afin de recevoir des informations sur l’état de capteurs dans
-un réseau.
+        <div class="parallax-outer">
+            <div class="parallax" id="home">
+                <div class="outer-container" id="homepage">
+                    <header>
+                        Bonjour, je m'appelle Diakarou et je suis
+                        <h1>Développeuse web full-stack</h1>
+                    </header>
 
-						</p>
-						<p class="dates">Dates 2021 - 2022</p>
-					</div>
-					
-						<div class="project">
-						<h4> Site d'nnonces immobilies</h4>
-						<p class="description">
-							Un site Web de gestion d’annonces immobilières contient et affiche des annonces immobilières. Un utilisateur non connecté peut consulter les annonces. Un utilisateur connecté peut en plus, poser des questions sur une annonce qu’il consulte. Un agent immobilier peut ajouter, modifier, supprimer une annonce. Il peut aussi répondre aux questions des utilisateurs sur les annonces affichées.
+                    <div id="header-text">
+                        Je suis à la recherche d'un <strong>stage</strong> fin d'etudes (6 mois) en <strong>France</strong>  à partir de <strong>mars 2022</strong>.
+                    </div>
 
-						</p>
-						<p class="dates">Dates 2021 - 2022</p>
-					</div>
-					<div class="project">
-						<h4>E commerce avec Symfony 6 </h4>
-						<p class="description">
-							En cours ,une partie deja fait disponible sur Github.
+                    <div class="space-between">
+                        <div class="item skill-box animated fadeInUp">
+                            <i class="fas fa-code"></i>
+                            front-end
+                        </div>
+                        <div class="item skill-box animated fadeInUp">
+                            <i class="fas fa-database"></i>
+                            back-end
+                        </div>
+                        <div class="item skill-box animated fadeInUp">
+                            <i class="fas fa-mobile-alt"></i>
+                            mobile
+                        </div>
+                        <div class="item skill-box animated fadeInUp">
+                            <i class="fas fa-pencil-ruler"></i>
+                            mathématique
+                        </div>
+                        <div class="item skill-box animated fadeInUp">
+                            <i class="fas fa-globe"></i>
+                            anglais
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="about">
+            <div class="outer-container">
+                <div class="space-between">
+                    <div class="item box1">
+                        <div class="img-container">
+                            <img src="images/zepeto.jpg" width="100%" />
+                            <img src="images/portrait.jpg" width="100%" class="img-overlay" />
+                        </div>
+                        <p><b>Nom :</b> Diakarou SOKHONA<br />
+                        <b>Age :</b> 29 ans<br />
+                        <b>Ville actuelle :</b> Le havre (76)<br />
+                        <b>Hobbies :</b> jeux-vidéo, sport, mathématique, informatique</p>
+                    </div>
 
-						</p>
-						<p class="dates">Dates 2021 - 2022</p>
-					</div>
+                    <div class="item box2">
+                        <div class="img-container box3">
+                            <img src="images/zepeto.jpg" width="100%" />
+                            <img src="images/portrait.jpg" width="100%" class="img-overlay" />
+                        </div>
 
-				</div>
-			</section>
-		</section>
+                        <h2>À propos de moi</h2>
 
-		<footer>
-			<div class="colonne" id="id_contact">
-				<h3>Mes services</h3>
-				<p>Développement des applications Web et mobile</p>
-				<p>Cours soutien en informatique</p>
-				<p>Développement Personnel</p>
-			</div>
-			<div class="colonne">
-				<h3>Mon entreprise</h3>
-				<p>UnitWin-CS-DC UNESCO</p>
-				<p>SOLWAY CS</p>
-				<p>BCI</p>
-			</div>
-			<div class="colonne">
-				<h3>Mes contacts</h3>
-				<p>diaksokhona1993@gmail.com</p>
-				<p>diakarousokhonacp@gmail.com</p>
-				<p>Tel: 06 22 49 74 05</p>
-			</div>
-		</footer>
-	</body>
+                        <div class="about-list box3">
+                            <b>Nom :</b> Diakarou SOKHONA<br />
+                            <b>Age :</b> 29 ans<br />
+                            <b>Ville actuelle :</b> Le havre (76)<br />
+                            <b>Hobbies :</b> jeux-vidéo, sport, mathématique, informatique</p>
+                        </div>
+
+                        <p>Développeur web junior, je recherche un Stage après avoir passé 6 mois en télétravail dans des agences web. Cette expérience m’a permis d’acquérir autonomie et confiance en moi. J’ai ainsi pu renforcer ce que j’ai appris lors de ma formation , et étoffer mon panel de compétences.</p>
+                        <p>Je profite aujourd’hui du temps dont je dispose pour continuer d’apprendre de nouvelles technologies et notamment enrichir mes connaissances en développement mobile avec Android Studio et react native.</p>
+                        <p>Après avoir obtenu une licence en mathématique, j’ai choisi de me reconvertir dans le métier de développeur web. Touche à tout, je m’intéresse également au web et mobile, ce qui me permet d’aborder le développement back-end et front-end avec sérénité.</p>
+                        <p>Autonome de nature, je peux travailler seule ou en groupe, étant également capable de m’adapter à un environnement que je ne connais pas. Je sais faire preuve de force de proposition lorsque l’on m’en donne la liberté, cherchant toujours à améliorer et optimiser les projets au maximum pour satisfaire au mieux la demande du client. L’optimisation du code fait partie de mes priorités.</p>
+                    </div>
+                </div>
+
+                <div class="box" id="buttons-container">
+                    <a href="#contact"><button class="item" id="cont">
+                        Me contacter
+                    </button></a>
+                    <button class="item" id="cv" type="submit" onclick="window.open('files/CV.pdf')">
+                        Télécharger mon CV
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="grey">
+            <div class="outer-container">
+                <h2 class="section-title">Compétences</h2>
+                <div class="under-title"></div>
+
+                <div class="skill center hidden" id="front-end">
+                    <div class="c-item content">
+                        <h4 class="front">Front-end</h4>
+                        
+                        <div class="item desc">
+                            Création et intégration de sites web et applications mobiles responsive, accessibles et répondant aux normes W3C.
+                        </div>
+
+                        <div class="space-between">
+                            <div class="item el">
+                                <div class="space-between">
+                                    <div class="item names">
+                                        HTML5<br />
+                                        CSS3<br />
+                                        JavaScript<br />
+                                        jQuery<br />
+                                        JSON<br />
+                                        Ajax
+                                    </div>
+                                    <div class="item stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item el">
+                                <div class="space-between">
+                                    <div class="item names">
+                                        Angular<br />
+                                        React<br />
+                                        Pug<br />
+                                        Bootstrap<br />
+                                        less
+                                    </div>
+                                    <div class="item stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-item icon front"><i class="fas fa-code"></i></div>
+                </div>
+
+                <div class="skill center hidden" id="back-end">
+                    <div class="c-item icon back"><i class="fas fa-database"></i></div>
+
+                    <div class="c-item content">
+                        <h4 class="back">Back-end</h4>
+                        
+                        <div class="item desc">
+                            Développement de sites web et applications, création et gestion de bases de données, programmation orientée objet et modèle MVC.
+                        </div>
+
+                        <div class="space-between">
+                            <div class="item el">
+                                <div class="space-between">
+                                    <div class="item names">
+                                        PHP,PostGres<br />
+                                        SQL,MongoDB<br />
+                                        Symfony<br />
+                                        GraphQL
+                                    </div>
+                                    <div class="item stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item el">
+                                <div class="space-between">
+                                    <div class="item names">
+                                        Python<br />
+                                        NodeJS <br />
+                                        Java<br />
+                                        API REST
+                                    </div>
+                                    <div class="item stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill center hidden" id="cms">
+                    <div class="c-item content">
+                        <h4 class="cms">CMS</h4>
+                        
+                        <div class="item desc">
+                            Création et édition de thèmes et plugins. Mon expérience est principalement portée sur WordPress. J'ai l'habitude de travailler avec les plugins WooCommerce, ACF et Yoast SEO.
+                        </div>
+
+                        <div class="space-between">
+                            <div class="item el">
+                                <div class="space-between">
+                                    <div class="item names">
+                                        WordPress<br />
+                                        Magento
+                                    </div>
+                                    <div class="item stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item el">
+                                <div class="space-between">
+                                    <div class="item names">
+                                        PrestaShop
+                                    </div>
+                                    <div class="item stars">
+                                        <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="c-item icon cms"><i class="fas fa-user-edit"></i></div>
+                </div>
+    
+                <div class="skill center hidden" id="web-design">
+                    <div class="c-item icon design"><i class="fas fa-pencil-ruler"></i></div>
+
+                    <div class="c-item content">
+                        <h4 class="design">Web design</h4>
+                        
+                        <div class="item desc">
+                            Création de maquettes XD et HTML, ainsi que de prototypes fonctionnels. Conception centrée utilisateur selon les règles d'UX lors de la création d'une interface utilisateur.
+                        </div>
+
+                        <div class="space-between">
+                            <div class="item el">
+                                <div class="space-between">
+                                    <div class="item names">
+                                        Adobe XD<br />
+                                        Photoshop<br />
+                                        inDesign
+                                    </div>
+                                    <div class="item stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><br />
+                                        <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item el">
+                                <div class="space-between">
+                                    <div class="item names">
+                                        Maquettage<br />
+                                        Prototypage
+                                    </div>
+                                    <div class="item stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><br />
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill center hidden" id="environnement">
+                    <div class="c-item content">
+                        <h4 class="env">Environnement de travail</h4>
+                        
+                        <div class="item desc end">
+                            <i class="fas fa-desktop"></i> <b>Systèmes d'exploitation :</b> Windows, Linux,Ubuntu<br />
+                            <i class="fas fa-terminal"></i> <b>Workflow :</b> Git, Chrome, firefox, Postman, CLI, NPM<br />
+                            <i class="fas fa-code"></i> <b>IDE :</b> Visual Studio Code, Atom,Eclise,DataGrip,PHP Store Android Studio,Anaconda<br />
+                            <i class="fas fa-pen-alt"></i> <b>Autres compétences :</b> maîtrise de l'anglais, traduction anglais/français, rédaction<br />
+                            <i class="fas fa-user-tie"></i> <b>Savoir-être :</b> capacité d'adaptation, travail en équipe, organisation, rigueur, force de proposition
+                        </div>
+                    </div>
+                    
+                    <div class="c-item icon env"><i class="fas fa-mug-hot"></i></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="outer-container">
+                <h2 class="section-title">Parcours</h2>
+
+                <div id="timeline">
+
+                    <div class="event work hidden" id="six">
+                        <div class="left">
+                            <p>JUILLET 2021 <br />
+                            à <br />
+                            SEPTEMBRE 2021</p>
+                        </div>
+                        <div class="right">
+                            <div class="content">
+                                    
+                                <h3><i class="fas fa-briefcase"></i> DÉVELOPPEUR WEB FULL-STACK</h3>
+                                <div class="date">
+                                    JUILLET 2021 à SEPTEMBRE 2021
+                                </div>
+                                <div class="place"> UnitWin-UNESO ,Paris (75)</div>
+                                
+
+                                <ul>
+                                    <li>Analyse des besoins du client, attribution de tâches dans l’équipe</li>
+                                    <li>Développement de sites web avec NodeJS, JavaScript,Express</li>
+                                    <li>Conception et gestion de bases de données avec MongoDB</li>
+                                    <li>Intégration de maquettes HTML</li>
+                                    <li>Veille à la compatibilité avec les différents navigateurs (Chrome, Explorer, Firefox...) ainsi qu’au responsive (tablette, mobile)</li>
+                                    <li>Mise en production (client SSH, connexion FTP)</li>
+                                    <li>Gestion du SEO</li>
+                                    <li>Utilisation de Git (Gitlab)</li>
+                                    <li>Réalisation de maquettes HTML, rétro-plannings et présentations de projets</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event exp hidden" id="five">
+                        <div class="left">
+                            <p>AVRIL 2021 <br />
+                                à <br />
+                                JUIN 2021</p>
+                        </div>
+                        <div class="right">
+                            <div class="content">
+                                <h3><i class="fas fa-briefcase"></i> DÉVELOPPEUR PHP AVEC SYMFONY</h3>
+                                <div class="date">AVRIL 2021 à JUIN 2021</div>
+                                <div class="place">SOLWAY CS, Nanterre (92)</div>
+
+                                <ul>
+                                    <li>Récupération de mot de passe sans bundle</li>
+                                    <li>Vérification d'adresse email sans bundle</li>
+                                    <li>Intégrer les données dans les vues</li>
+                                    <li>Création des contrôleurs</li>
+                                    <li>Optimisation et Datafixtures</li>
+                                    <li>Inscription et authentification des utilisateurs</li>
+                                    <li>Templetes Twig</li>
+                                    <li>Création de la base de données</li>
+                                    <li>Analyse des besoins du client</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event school hidden" id="four">
+                        <div class="left">
+                            <p>2021 <br />
+                            à <br />
+                            2023</p>
+                        </div>
+                        <div class="right">
+                            <div class="content">
+                                <h3><i class="fas fa-graduation-cap"></i> Master  Informatique</h3>
+                                <div class="date">2021 à 2023</div>
+                                <div class="place">Master  Informatique Ingénierie du Web, des Objets
+                                    Communicants et des Systèmes Complexes (IWOCS), Le havre (76)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event exp hidden" id="three">
+                        <div class="left">
+                            <p>2018 <br />
+                                à <br />
+                                2021</p>
+                        </div>
+                        <div class="right">
+                            <div class="content">
+                                <h3><i class="fas fa-graduation-cap"></i> LICENCE Informatique</h3>
+                                <div class="date">2018 à 2021</div>
+                                <div class="place">Licence Informatique, Le havre (76)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event school hidden" id="two">
+                        <div class="left">
+                            <p>2015 <br />
+                            à <br />
+                            2018</p>
+                        </div>
+                        <div class="right">
+                            <div class="content">
+                                <h3><i class="fas fa-graduation-cap"></i> LICENCE  mathématique</h3>
+                                <div class="date">2015 à AVRIL 2018</div>
+                                <div class="place">LICENCE  mathématique (99)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event school hidden" id="one">
+                        <div class="left">
+                            <p><br /> 2015</p>
+                        </div>
+                        <div class="right">
+                            <div class="content">
+                                <h3><i class="fas fa-graduation-cap"></i> BACCALAURÉAT Scientifique</h3>
+                                <div class="date"> 2015</div>
+                                <div class="place">BACCALAURÉAT (99)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+       
+
+        <section id="contact">
+            <div class="outer-container">
+                <h2 class="section-title">Contactez-moi !</h2>
+
+                <div class="contact-subtitle">
+                    Actuellement à la recherche d'un nouvel emploi, je suis intéressée par les postes de :<br />
+                    <div class="jobs">
+                        <b>Développeur full-stack • Développeur back-end • Développeur front-end</b>
+                    </div>
+                </div>
+
+                <div class="space-between">
+                    <div class="item contact-box phone">
+                        <i class="fal fa-mobile"></i>
+                        <div class="text">+33 6 22 49 74 05</div>
+                    </div>
+                    <div class="item contact-box email">
+                        <i class="fal fa-envelope"></i>
+                        <div class="text">diaksokhona1993@gmail.com</div>
+                    </div>
+                    <div class="item contact-box meet">
+                        <div class="text">Vous souhaitez<br /> me rencontrer ?</div>
+                        <p>Je suis disponible à<br /> <b>Le havre, Paris</b> et ses alentours</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://www.linkedin.com/in/diakarou-sokhona-a72322185/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <i class="far fa-print" onclick="window.open('files/CV.pdf')"></i><br />
+            Diakarou SOKHONA © 2022<br />
+            Tous droits réservés
+        </footer>
+
+        <script src="scripts/jquery-3.4.0.min.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>
