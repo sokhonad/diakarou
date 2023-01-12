@@ -815,7 +815,9 @@ footer i:hover {
     transition: .5s ease;
     -webkit-transition: all 0.5s;
 }
-
+footer .fa-github {
+    background-color: #31a14d;
+}
 footer .fa-linkedin-in {
     background-color: #007bb6;
 }
