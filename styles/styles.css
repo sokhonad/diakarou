@@ -254,6 +254,7 @@ header {
 }
 
 #header-text {
+    color: white;
     font-size: 25px;
     font-weight: 300;
     margin: 70px 0px 110px 0px;
